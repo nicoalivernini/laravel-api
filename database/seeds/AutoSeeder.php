@@ -18,7 +18,7 @@ class AutoSeeder extends Seeder
 
         $auto->model = $faker->randomElement(['Model X', 'Kuga', 'Q7', 'Serie 2', 'Classe E']);
         $auto->brand = $faker->randomElement(['Tesla', 'Ford', 'Audi', 'BMW', 'Mercedes']);
-        $auto->doors = $faker->numberBetween(0, 5);
+        $auto->doors = $faker->numberBetween(3, 5);
 
         $auto->save();
       }
