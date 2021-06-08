@@ -101,7 +101,6 @@ var app = new Vue({
   created: function created() {
     var _this = this;
 
-    console.log('ok');
     axios.get('http://localhost:8000/api/autos').then(function (response) {
       _this.autos = response.data.data;
     });
